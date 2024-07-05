@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Buddy</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="header">
+        <img src="travelbuddy.png" alt="Travel Buddy Logo" class="logo" width="100px">
+        <h1>Travel Buddy</h1>
+    </div>
+    <nav class="navbar background h-nav" style="z-index: 2;">
+        <ul class="nav-list v-nav">
+            
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+       
+    </nav>
+
+    <div class="container">
+        <div class="search-form">
+            <h2>Find Your Travel Partner</h2>
+            <form id="searchForm">
+                <label for="travelType">Travel Type:</label>
+                <select id="travelType" name="travelType">
+                    <option value="solo">Solo</option>
+                    <option value="group">Group</option>
+                </select>
+                <br><br>
+                <label for="budget">Budget Range:</label>
+                <input type="text" id="budget" name="budget" placeholder="Enter your budget">
+                <br><br>
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter your destination">
+                <br><br>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div id="results">
+            <!-- Results will be displayed here dynamically -->
+        </div>
+
+        <!-- Registration Button -->
+        <div class="register-button">
+            <a href="register.html"><button>Register</button></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
+
